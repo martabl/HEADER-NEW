@@ -1,0 +1,17 @@
+.header {
+  position: relative;
+  background-color: $light-color;
+  width: 100%;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $border-color;
+  align-items: center;
+}
+.logo-link {
+  width: 80px;
+}
+.logo {
+  max-width: 100%;
+}
