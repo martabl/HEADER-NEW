@@ -1,18 +1,18 @@
 
 'use strict';
 
+var menu = document.querySelector('.nav-small');
 var toggleMenu = function () {
-  var menu = document.getElementById('js-menu-small');
-  if (menu.classList.contains('hide')) {
-    menu.classList.remove('hide');
-  } else {
-    menu.classList.add('hide');
-  }
+  menu.classList.toggle('hide');
 };
 
 document.getElementById('js-button-burguer').addEventListener('click', toggleMenu);
 
-var smallMenuLinkList = document.querySelectorAll('#js-menu-small li a');
+var hideMenu = function () {
+  menu.classList.add('hide');
+};
+
+var smallMenuLinkList = document.querySelectorAll('.nav-small li a');
 for (var i = 0; i < smallMenuLinkList.length; i++) {
-  smallMenuLinkList[i].addEventListener('click', toggleMenu);
+  smallMenuLinkList[i].addEventListener('click', hideMenu);
 }

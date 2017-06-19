@@ -13,8 +13,6 @@ body {
   width: 80px;
   outline: none;
   cursor: pointer; }
-  .btn-menu.hidden {
-    overflow: hidden; }
   .btn-menu .btn-menu-icon {
     max-width: 100%;
     -webkit-transform: scale(1);
@@ -41,10 +39,10 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   top: 100%;
-  -webkit-animation: nav-small 0.5s linear 0s;
-          animation: nav-small 0.5s linear 0s; }
+  -webkit-animation: fall-down 1s;
+          animation: fall-down 1s; }
 
-@-webkit-keyframes nav-small {
+@-webkit-keyframes fall-down {
   0% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%); }
@@ -52,7 +50,7 @@ body {
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
-@keyframes nav-small {
+@keyframes fall-down {
   0% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%); }
@@ -78,9 +76,9 @@ body {
 
 @media (min-width: 768px) {
   .nav {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     list-style: none; } }
 .header {
   position: relative;

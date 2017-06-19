@@ -12,10 +12,10 @@
   margin-top: 0;
   margin-bottom: 0;
   top: 100%;
-  animation: nav-small 0.5s linear 0s;
+  animation: fall-down 1s;
 }
 
-@keyframes nav-small {
+@keyframes fall-down {
   0% { transform: translateY(-100%); }
   100% { transform: translateY(0); }
 }
@@ -38,9 +38,9 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $max-size-tablet) {
   .nav{
-    display: inline-flex;
+    display: flex;
     list-style: none;
   }
 }
